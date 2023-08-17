@@ -10,6 +10,7 @@ import static io.restassured.RestAssured.given;
 
 public class Task_3 extends TestConfig {
     private final String PRODUCTS_ENDPOINT = "products/{productID}";
+
     //DELETE REQUEST
     @Test
     public void deleteProduct(){

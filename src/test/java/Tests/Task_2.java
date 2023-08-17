@@ -20,6 +20,7 @@ public class Task_2 extends TestConfig {
         * Status code is 200
         * The response header is JSON Type
         * */
+
         given()
         .when()
                 .get(PRODUCTS_ENDPOINT,"")
@@ -29,6 +30,7 @@ public class Task_2 extends TestConfig {
                 .contentType(ContentType.JSON);
 
     }
+
     //POST REQUEST
     @Test
     public void insertProduct(){
@@ -40,6 +42,7 @@ public class Task_2 extends TestConfig {
          * Status code is 200
          * The response header is JSON Type
          * */
+
         String productJSON = "{\n" +
                 "    \"title\": \"iPhone 19\",\n" +
                 "    \"description\": \"An apple mobile which is nothing like apple\",\n" +
@@ -68,6 +71,7 @@ public class Task_2 extends TestConfig {
                 .contentType(ContentType.JSON);
     }
 
+
     //PUT REQUEST
     @Test
     public void updateProduct(){
@@ -79,6 +83,7 @@ public class Task_2 extends TestConfig {
          * Status code is 200
          * The response header is JSON Type
          * */
+
         String productUpdatedJSON = "{\n" +
                 "    \"title\": \"iPhone 19\",\n" +
                 "    \"price\": 1099,\n" +
@@ -104,6 +109,7 @@ public class Task_2 extends TestConfig {
                 .contentType(ContentType.JSON);
     }
 
+
     //DELETE REQUEST
     @Test
     public void deleteProduct(){
@@ -111,6 +117,7 @@ public class Task_2 extends TestConfig {
         * Data Validation:
         * The confirmation values in the response indicate that the product has been deleted.
         * */
+
         String productID = "1";
         given()
         .when()

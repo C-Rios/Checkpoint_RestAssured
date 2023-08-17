@@ -9,6 +9,7 @@ import static io.restassured.RestAssured.*;
 public class Task_1 extends TestConfig {
     private final String PRODUCTS_ENDPOINT = "products/{productID}";
 
+
     //GET REQUEST
     @Test
     public void getAllProducts(){
@@ -20,6 +21,7 @@ public class Task_1 extends TestConfig {
 
         //System.out.println(response.print());
     }
+
 
     //POST REQUEST
     @Test
@@ -44,6 +46,7 @@ public class Task_1 extends TestConfig {
     }
 
     //PUT REQUEST
+
     @Test
     public void updateProduct(){
         String productUpdatedJSON = "{\n" +
@@ -63,6 +66,7 @@ public class Task_1 extends TestConfig {
     }
 
     //DELETE REQUEST
+
     @Test
     public void deleteProduct(){
         String productID = "1";
