@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "id",
+    "title",
+    "description",
+    "price",
+    "discountPercentage",
+    "rating",
+    "stock",
+    "brand",
+    "category",
+    "thumbnail",
+    "images"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "default": 0,
+      "title": "The id Schema",
+      "examples": [
+        11
+      ]
+    },
+    "title": {
+      "type": "string",
+      "default": "",
+      "title": "The title Schema",
+      "examples": [
+        "perfume Oil"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "default": "",
+      "title": "The description Schema",
+      "examples": [
+        "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil"
+      ]
+    },
+    "price": {
+      "type": "integer",
+      "default": 0,
+      "title": "The price Schema",
+      "examples": [
+        13
+      ]
+    },
+    "discountPercentage": {
+      "type": "number",
+      "default": 0.0,
+      "title": "The discountPercentage Schema",
+      "examples": [
+        8.4
+      ]
+    },
+    "rating": {
+      "type": "number",
+      "default": 0.0,
+      "title": "The rating Schema",
+      "examples": [
+        4.26
+      ]
+    },
+    "stock": {
+      "type": "integer",
+      "default": 0,
+      "title": "The stock Schema",
+      "examples": [
+        65
+      ]
+    },
+    "brand": {
+      "type": "string",
+      "default": "",
+      "title": "The brand Schema",
+      "examples": [
+        "Impression of Acqua Di Gio"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "default": "",
+      "title": "The category Schema",
+      "examples": [
+        "fragrances"
+      ]
+    },
+    "thumbnail": {
+      "type": "string",
+      "default": "",
+      "title": "The thumbnail Schema",
+      "examples": [
+        "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
+      ]
+    },
+    "images": {
+      "type": "array",
+      "default": [],
+      "title": "The images Schema",
+      "items": {
+        "type": "string",
+        "title": "A Schema",
+        "examples": [
+          "https://i.dummyjson.com/data/products/11/1.jpg",
+          "https://i.dummyjson.com/data/products/11/2.jpg",
+          "https://i.dummyjson.com/data/products/11/3.jpg",
+          "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
+        ]
+      },
+      "examples": [
+        ["https://i.dummyjson.com/data/products/11/1.jpg",
+          "https://i.dummyjson.com/data/products/11/2.jpg",
+          "https://i.dummyjson.com/data/products/11/3.jpg",
+          "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
+        ]
+      ]
+    }
+  },
+  "examples": [{
+    "id": 11,
+    "title": "perfume Oil",
+    "description": "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
+    "price": 13,
+    "discountPercentage": 8.4,
+    "rating": 4.26,
+    "stock": 65,
+    "brand": "Impression of Acqua Di Gio",
+    "category": "fragrances",
+    "thumbnail": "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/11/1.jpg",
+      "https://i.dummyjson.com/data/products/11/2.jpg",
+      "https://i.dummyjson.com/data/products/11/3.jpg",
+      "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
+    ]
+  }]
+}
